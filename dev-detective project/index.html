@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github-Profiles</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-body>
+     <div class="container">
+        <header data-container >
+         <h1>DevDetective</h1>
+         <div btn-mode>
+            <p data-mode class="dark">dark</p>
+            <p data-mode class="light">light</p>
+              <div data-icon-container class="sun"><img src="./assets/images/sun-icon.svg"></div>
+          <div data-icon-container class="moon"><img src="./assets/images/moon-icon.svg"></div>
+
+         </div>
+         </header>
+         <!--search bar-->
+         <div data-searchImg>
+            <img src="./assets/images/search-icon.svg" class="noResult">
+            <form data-userSearch>
+                <input type="search"  placeholder="Enter a GitHub username..." require> 
+                <button class="search-btn">Search</button>
+            </form> 
+         </div>
+         <!--data profile-->
+         <div data-userProfile>
+            <div data-subProfile>
+                <img data-img>
+                 <div data-heading>
+                    <div class="subheading">
+                        <div>
+                            <h2 data-Username > </h2>
+                            <a href="#" target="_blank" class="data-userId" id="user"></a> 
+                        </div>
+                <div data-dob></div>
+                </div>
+                <p data-bio id="bio"></p>
+            <div data-profile-stat  class="profile-stat">
+            <div data-subprofile-stat class="subprofile-stat">
+                <p class="stat-title">respos</p>
+                <p data-respos class="stat-value "></p>
+            </div>
+            <div data-subprofile-sta class="subprofile-stat">
+                <p class="stat-title">followers</p>
+                <p data-followers class="stat-value"></p>
+            </div>
+            <div data-subprofile-sta class="subprofile-stat">
+                <p class="stat-title">following</p>
+                <p data-following class="stat-value"></p>
+            </div>
+        </div>
+        <div data-profile-bottom class="profile-bottom">
+            <div class="bottom">
+            <div data-subprofile-bottom> 
+                <img src="./assets/images/location-icon.svg" class="bottom-icons">
+                <a href="#" data-location ></a>
+            </div>
+            <div data-subprofile-bottom>
+                <img src="./assets/images/twitter-icon.svg" class="bottom-icons">
+                <a href="#" data-twitter></a>
+               </div>
+            </div>
+            <div class="bottom">
+           <div  data-subprofile-bottom>
+            <img src="./assets/images/website-icon.svg" class="bottom-icons">
+            <a href="#" data-website ></a>
+           </div>
+           <div data-subprofile-bottom>
+            <img src="./assets/images/company-icon.svg" class="bottom-icons">
+            <a href="#" data-company></a>
+           </div>
+        </div>
+        </div>
+           </div>
+        </div>
+         </div>
+         <div class="error">
+           <p> user name does not exist</p>
+        </div>
+     
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
